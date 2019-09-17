@@ -11,9 +11,11 @@ def index():
 
 @app.route('/Suzhou')
 def suzhou_index():
-    return 'Hi Suzhou'
+    return render_template('suzhou_index.html')
 
-
+@app.route('/Suzhou/test')
+def suzhou_test():
+    return render_template('suzhou_test.html')
 
 if __name__ == '__main__':
     app.run(debug = False)
